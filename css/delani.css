@@ -1,0 +1,23 @@
+.jumbo{
+  position:absolute;
+height:100%;
+width:100%;
+/* font-size:76px; */
+text-align: center;
+top:30%;
+bottom:70%;
+
+ }
+
+.containe{
+  background-color:grey;
+  position: relative;
+  text-align: center;
+}
+h1{
+  font-size:76px;
+  margin-top:50px;
+}
+#hh{
+  margin-top:80px;
+}
