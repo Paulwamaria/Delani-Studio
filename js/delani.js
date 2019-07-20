@@ -32,12 +32,25 @@ $(document).ready(function(){
   });
 
   // hover effect
-  $("#work4,.displayName").hover(function(){
-    $("#work4").addClass("reduceOpacity");
-    $(".displayName").show();},function(){
-      $(this).removeClass("reduceOpacity");
-      $(".displayName").hide();
+  // $("#work4,.displayName").hover(function(){
+  //   $("#work4").addClass("reduceOpacity");
+  //   $(".displayName").show();},function(){
+  //     $(this).removeClass("reduceOpacity");
+  //     $(".displayName").hide();
+  // });
+  $(".cont img").each(function(){
+    $(this).hover(function(){
+      $(this).addClass("reduceOpacity");
+      $(this).siblings().show();
+      },function(){
+        $(this).removeClass("reduceOpacity");
+        $(this).siblings().hide();
+      });
+  
   });
+  $("textarea").each(function(){
+    $(this).val($(this).data("name"));
+    });
 
   
 });
