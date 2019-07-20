@@ -52,7 +52,7 @@ $(document).ready(function(){
   });
 
 
-  $("textarea").each(function(){
+  $(".cont textarea").each(function(){
     $(this).val($(this).data("name"));
     $(this).hover(function(){
       $(this).show();
@@ -60,6 +60,26 @@ $(document).ready(function(){
     });
     });
    
+//submiting the form
+$("#contact").keydown(function(){
+  var userName=$("#name").val();
+  var emailAdress=$("#email").val();
+  var submitKey=event.which;
+  var userMessage=$("#comments").val();
+  if(submitKey===13){
+    if(userName===""){
+      alert("You must enter a name!");
+    }else if(emailAdress===""){
+      alert("Enter your email address.");
+    }else if(userMessage===""){
+      alert("message is missing!");
+    }else{
+      $(this).submit();
+      alert(userName + " "+"we have received your message. Thank you for reaching out to us.");
+    }
+  }
 
+
+});
   
 });
