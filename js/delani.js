@@ -38,19 +38,28 @@ $(document).ready(function(){
   //     $(this).removeClass("reduceOpacity");
   //     $(".displayName").hide();
   // });
-  $(".cont img").each(function(){
+  $(".cont img ").each(function(){
     $(this).hover(function(){
       $(this).addClass("reduceOpacity");
-      $(this).siblings().show();
+      $(this).siblings(":last").show();
       },function(){
         $(this).removeClass("reduceOpacity");
-        $(this).siblings().hide();
+        $(this).siblings(":last").hide();
       });
+
+ 
   
   });
+
+
   $("textarea").each(function(){
     $(this).val($(this).data("name"));
+    $(this).hover(function(){
+      $(this).show();
+      $(this).siblings(":first").addClass("reduceOpacity");
     });
+    });
+   
 
   
 });
