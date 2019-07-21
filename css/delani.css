@@ -66,9 +66,9 @@ figcaption{
   position:relative;
   margin-top:40px;
 }
-#s-image{
+/* #s-image{
   opacity:0.7;
-}
+} */
 .contact{
   position:absolute;
   height:100%;
@@ -120,4 +120,7 @@ background-color:white;
 }
 .c-right{
   font-weight: 600;
+}
+.changeColor{
+color:black;
 }

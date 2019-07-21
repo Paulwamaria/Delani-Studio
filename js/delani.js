@@ -52,15 +52,23 @@ $(document).ready(function(){
   });
 
 
-  $(".cont textarea").each(function(){
-    $(this).val($(this).data("name"));
+  $(".cont .projectNames").each(function(){
+    // $(this).val($(this).data("name"));
     $(this).hover(function(){
       $(this).show();
       $(this).siblings(":first").addClass("reduceOpacity");
     });
     });
+
+    $(".serv").hover(function(){
+      $(this).addClass("changeColor");
+      $("#s-image").addClass("reduceOpacity");
+    },function(){
+      $(this).removeClass("changeColor");
+      $("#s-image").removeClass("reduceOpacity");
+    });
    
-//submiting the form
+//submiting the form//front-end
 $("#contact").keydown(function(){
   var userName=$("#name").val();
   var emailAdress=$("#email").val();
