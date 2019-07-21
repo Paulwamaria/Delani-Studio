@@ -67,6 +67,12 @@ $(document).ready(function(){
       $(this).removeClass("changeColor");
       $("#s-image").removeClass("reduceOpacity");
     });
+
+    //accessing the main content
+    $("#mouse").click(function(){
+      $(".main").toggle();
+      
+    });
    
 //submiting the form//front-end
 $("#contact").keydown(function(){
