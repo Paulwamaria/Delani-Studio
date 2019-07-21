@@ -69,10 +69,25 @@ $(document).ready(function(){
     });
 
     //accessing the main content
-    $("#mouse").click(function(){
+    $("#mouse,#clickMe").click(function(){
       $(".main").toggle();
       
     });
+
+    //add a blinking function
+    // function blink(selector){
+    //   $("#mouse,#clickMe").fadeOut('slow',function(){
+    //     $(this).fadeIn('slow',function(){
+    //       blink(this);
+    //     });
+    //   });
+    // }
+    $("#mouse,#clickMe").hover(function(){
+     $(this).addClass("enlarge")
+    },function(){
+      $(this).removeClass("enlarge");
+    });
+    
    
 //submiting the form//front-end
 $("#contact").keydown(function(){
