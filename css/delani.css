@@ -1,5 +1,6 @@
 body{
   text-align:center;
+
 }
 .jumbo,.serv{
   position:absolute;
@@ -37,7 +38,7 @@ figcaption{
   margin-top:30px;
 }
 #mouse{
-  margin-top:220px;
+  margin-top:200px;
 }
 .about{
   margin-top:30px;
@@ -109,9 +110,9 @@ background-color:white;
 }
 .projectNames{
   top:40%;
-left:30%;
+left:8%;
 display:none;
-font-size:30px;
+font-size:26px;
 font-family: 'Faster One', cursive;
 color:blue;
 background-color:white;
@@ -122,12 +123,10 @@ background-color:white;
 .changeColor{
 color:black;
 }
-.main{
-  display:none;
-}
+
 .enlarge{
   /* background-color:black; */
   color:white;
- font-size: 30px;
+
   
 }
